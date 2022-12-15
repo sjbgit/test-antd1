@@ -35,7 +35,7 @@ export default function App() {
     <div className="App">
       <>
         <Form
-          
+          colon
           initialValues={{
             "approver-key-accounts": "4 days before period end date",
             "bussiness-admin-nonkey-accounts": "4 days after period end date",
@@ -47,22 +47,22 @@ export default function App() {
             "reviewer-key-accounts": "2 days after period end date",
             "system-admin-nonkey-accounts": "on the day of period end date"
           }}
-          labelAlign="left"
+          labelAlign="right"
           labelCol={{
             md: {
-              offset: 10,
+              offset: 0,
               span: 4
             },
             sm: {
-              offset: 10,
+              offset: 0,
               span: 2
             },
             xs: {
-              offset: 10,
+              offset: 0,
               span: 1
             }
           }}
-          layout="vertical"
+          layout="horizontal"
           name="due-dates"
           onFieldsChange={function noRefCheck() {}}
           onFinish={function noRefCheck() {}}
